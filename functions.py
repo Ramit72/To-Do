@@ -4,7 +4,7 @@ def get_tasks(filepath="tasks.txt"):
         tasks_local = f.readlines()
         return tasks_local
 
-def write_tasks(todos,filepath="tasks.txt"):
+def write_tasks(tasks,filepath="tasks.txt"):
     '''writes tasks to a text file'''
     with open(filepath, "w") as f:
-        f.writelines(todos)
+        f.writelines(tasks)
